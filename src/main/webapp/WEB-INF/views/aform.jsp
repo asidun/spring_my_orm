@@ -5,12 +5,13 @@
 <body>
 	<h2>Do you like a newsletter?</h2>
  
-	<form:form method="POST" action="aform">
+	<form:form method="POST" action="aform" commandName="personForm">
 		<table>
 			<tr>
 				<td><form:label path="userName" >Name :</form:label></td>
 				<td><form:input path="userName" />
 				</td>
+				<form:errors path="userName" />
 				<td>
 				</td>
 			</tr>
@@ -19,6 +20,7 @@
 				<td><form:textarea path="address" />
 				</td>
 				<td>
+				<form:errors path="address" />
 				</td>
 			</tr>
 			<tr>

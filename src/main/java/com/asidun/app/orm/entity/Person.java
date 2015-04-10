@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
 @Table(name="Person")
 public class Person {
@@ -15,7 +17,9 @@ public class Person {
 	@Column(name="id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String id;
+	@NotEmpty(message="Name is mandatory")
 	String userName;
+	@NotEmpty(message="Address is mandatory")
 	String address;	
 	String youLikeNewsletter;
 	String sex;
