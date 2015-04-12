@@ -11,7 +11,7 @@
 				<td><form:label path="userName" >Name :</form:label></td>
 				<td><form:input path="userName" />
 				</td>
-				<form:errors path="userName" />
+				<form:errors path="userName" cssStyle="color:red"/>
 				<td>
 				</td>
 			</tr>
@@ -20,7 +20,7 @@
 				<td><form:textarea path="address" />
 				</td>
 				<td>
-				<form:errors path="address" />
+				<form:errors path="address" cssStyle="color:red"/>
 				</td>
 			</tr>
 			<tr>

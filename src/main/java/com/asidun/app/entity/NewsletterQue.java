@@ -1,7 +1,9 @@
 package com.asidun.app.entity;
 
+//local code review (vtegza):  no need in this model @ 12.04.15
 public class NewsletterQue {
 
+	//local code review (vtegza): should be private, this is broken OOP @ 12.04.15
 	String userName;
 	String address;	
 	String youLikeNewsletter;
